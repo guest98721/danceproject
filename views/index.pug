@@ -1,0 +1,62 @@
+doctype html 
+html 
+  head   
+    style  
+       include ../static/style.css 
+    title Sai Ganesh
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+  body 
+    nav#navbar 
+        ul 
+             div#logo
+                img(src="/static/img/dan3.jpg")
+                |SDA 
+             li #[a(href="/") Home]
+             li #[a(href="#") About Us] 
+             li #[a(href="#") Services] 
+             li #[a(href="/contact") Contact] 
+    section#bod          
+        h1 Welcome to Sai Dance Academy
+        p Eat Dance Sleep Repeat 
+    section#introsection
+         h1 This is best academy to learn dance 
+         div.card 
+           p Dance perfection
+             div.card-box 
+                div.card-img 
+                  img(src="/static/img/dan2.jpg")
+                div.card-content 
+                   p This is the best dance academy in India
+         div.card 
+           p Innovative ways
+               div.card-box 
+                div.card-img 
+                  img(src="/static/img/dan3.jpg")
+                div.card-content 
+                   p This is the best dance academy in India
+         div.card 
+           p Expert Teaching
+                div.card-box 
+                 div.card-img 
+                  img(src="/static/img/dan4.jpg")
+                 div.card-content 
+                   p This is the best dance academy in India
+    section#sponsorsection 
+         |Sponsors of this Academy are flip,puma,wrogn,acer 
+         div#sponsors 
+            img(src="/static/img/fli.png",class="spimage") 
+            img(src="/static/img/puma.png",class="spimage") 
+            img(src="/static/img/wrogn.png",class="spimage") 
+            img(src="/static/img/acer.jpg",class="spimage") 
+
+         
+    footer#footer 
+         |Copy Rights © 2021 issused by govt of india for SaiGanesh.com | All Rights Reserved
+    script 
+      include ../static/index.js 
+      script(src='/__/firebase/8.6.1/firebase-app.js')
+      script(src='/__/firebase/8.6.1/firebase-analytics.js')
+      script(src='/__/firebase/init.js')

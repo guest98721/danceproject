@@ -1,0 +1,41 @@
+extends base.pug 
+block scripts
+  script(src='/static/index.js')
+block style 
+  style  
+     include ../static/style.css
+
+block content  
+    section#bod          
+        h1 Welcome to Sai Dance Academy
+        p Eat Dance Sleep Repeat 
+    section#introsection
+        h1 This is best academy to learn dance 
+        div.card 
+            p Dance perfection
+            div.card-box 
+                div.card-img 
+                  img(src="/static/img/dan2.jpg")
+                div.card-content 
+                   p This is the best dance academy in India
+        div.card 
+            p Innovative ways
+            div.card-box 
+                div.card-img 
+                  img(src="/static/img/dan3.jpg")
+                div.card-content 
+                   p This is the best dance academy in India
+        div.card 
+            p Expert Teaching
+            div.card-box 
+                div.card-img 
+                  img(src="/static/img/dan4.jpg")
+                div.card-content 
+                   p This is the best dance academy in India
+    section#sponsorsection 
+        |Sponsors of this Academy are flip,puma,wrogn,acer 
+        div#sponsors 
+          img(src="/static/img/fli.png",class="spimage") 
+          img(src="/static/img/puma.png",class="spimage") 
+          img(src="/static/img/wrogn.png",class="spimage") 
+          img(src="/static/img/acer.jpg",class="spimage") 
